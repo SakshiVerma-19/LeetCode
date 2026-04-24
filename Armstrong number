@@ -1,0 +1,23 @@
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("ENter a no");
+	    int num = sc.nextInt();
+	    int n= num;
+	    int count = String.valueOf(num).length();
+	    int sum=0;
+	    
+	    while(n!=0){
+	        int r=n%10;
+	        sum=sum+(int)Math.pow(r,count);
+	        n=n/10;
+	        
+	    }
+        if(num==sum)
+		System.out.println("Bruh! Amrstrong");
+		else System.out.print("Moon is far");
+	}
+}
